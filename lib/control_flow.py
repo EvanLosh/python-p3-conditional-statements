@@ -17,13 +17,13 @@ def hows_the_weather(temperature):
         return "It's perfect out there!"
 
 def fizzbuzz(num):
-    fizz = num % 3
-    buzz = num % 5
-    if ((fizz == 0) and (buzz == 0)):
+    fizz = num % 3 == 0
+    buzz = num % 5 == 0
+    if fizz and buzz:
         return 'FizzBuzz'
-    if fizz == 0:
+    if fizz:
         return 'Fizz'
-    if buzz == 0:
+    if buzz:
         return 'Buzz'
     else:
         return num
